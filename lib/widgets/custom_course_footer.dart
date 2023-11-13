@@ -23,14 +23,14 @@ class CustomCourseFooter extends StatelessWidget {
             width: size.width,
             height: 100.0,
             padding: const EdgeInsets.all(appPadding),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: textWhite,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20.0),
                 topRight: Radius.circular(20.0),
               ),
             ),
-            child: CustomButtonBox(title: 'Continue Class'),
+            child: const CustomButtonBox(title: 'Continue Class'),
           )
         : Container(
             width: size.width,
@@ -40,7 +40,7 @@ class CustomCourseFooter extends StatelessWidget {
               right: appPadding,
               top: appPadding,
             ),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: textWhite,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20.0),
@@ -50,28 +50,26 @@ class CustomCourseFooter extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Course Price',
-                        style: TextStyle(fontSize: 12.0, color: grey),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Course Price',
+                      style: TextStyle(fontSize: 12.0, color: grey),
+                    ),
+                    const SizedBox(height: 5),
+                    Text(
+                      coursePrice,
+                      style: const TextStyle(
+                        fontSize: 20.0,
+                        color: primary,
+                        fontWeight: FontWeight.w700,
                       ),
-                      SizedBox(height: 5),
-                      Text(
-                        coursePrice,
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: primary,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                SizedBox(width: miniSpacer + 5),
-                Flexible(child: CustomButtonBox(title: 'Enroll Now')),
+                const SizedBox(width: miniSpacer + 5),
+                const Flexible(child: CustomButtonBox(title: 'Enroll Now')),
               ],
             ),
           );

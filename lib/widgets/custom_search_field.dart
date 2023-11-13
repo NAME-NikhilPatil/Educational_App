@@ -14,6 +14,7 @@ class CustomSearchField extends StatefulWidget {
   final Color? backgroundColor;
 
   @override
+  // ignore: library_private_types_in_public_api
   _CustomSearchFieldState createState() => _CustomSearchFieldState();
 }
 
@@ -37,13 +38,12 @@ class _CustomSearchFieldState extends State<CustomSearchField> {
             height: 40.0,
             width: 40.0,
             alignment: Alignment.center,
-            child: Container(
-              child: SvgPicture.asset(
-                assetImg + 'search_icon.svg',
-                color: secondary,
-                // color: Colors.white,
-                height: 15.0,
-              ),
+            child: SvgPicture.asset(
+              '${assetImg}search_icon.svg',
+              // ignore: deprecated_member_use
+              color: secondary,
+              // color: Colors.white,
+              height: 15.0,
             ),
           ),
           Flexible(
@@ -53,7 +53,7 @@ class _CustomSearchFieldState extends State<CustomSearchField> {
               height: 38,
               alignment: Alignment.topCenter,
               child: TextField(
-                style: TextStyle(fontSize: 15),
+                style: const TextStyle(fontSize: 15),
                 cursorColor: textBlack,
                 decoration: InputDecoration(
                   hintText: widget.hintField,
@@ -66,7 +66,7 @@ class _CustomSearchFieldState extends State<CustomSearchField> {
               ),
             ),
           ),
-          SizedBox(width: 10.0),
+          const SizedBox(width: 10.0),
           Container(
             height: 40.0,
             width: 40.0,
@@ -79,16 +79,14 @@ class _CustomSearchFieldState extends State<CustomSearchField> {
                   color: primary.withOpacity(0.5),
                   spreadRadius: 0.0,
                   blurRadius: 6.0,
-                  offset: Offset(0, 2),
+                  offset: const Offset(0, 2),
                 )
               ],
             ),
-            child: Container(
-              child: SvgPicture.asset(
-                assetImg + 'filter_icon.svg',
-                color: textWhite,
-                height: 13.0,
-              ),
+            child: SvgPicture.asset(
+              '${assetImg}filter_icon.svg',
+              color: textWhite,
+              height: 13.0,
             ),
           ),
         ],

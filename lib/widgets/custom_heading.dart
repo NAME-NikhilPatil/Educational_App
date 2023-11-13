@@ -26,7 +26,7 @@ class CustomHeading extends StatelessWidget {
             fontWeight: FontWeight.w700,
           ),
         ),
-        SizedBox(height: 10.0),
+        const SizedBox(height: 10.0),
         Text(
           subTitle,
           style: TextStyle(

@@ -1,7 +1,6 @@
 
 import 'package:educational_app/theme/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -51,7 +50,7 @@ class CustomAppBar extends StatelessWidget {
                           color: primary.withOpacity(0.5),
                           spreadRadius: 0.0,
                           blurRadius: 6.0,
-                          offset: Offset(0, 2),
+                          offset: const Offset(0, 2),
                         )
                       ],
                     ),
@@ -61,29 +60,32 @@ class CustomAppBar extends StatelessWidget {
                         Navigator.pop(context);
                       },
                       child: SvgPicture.asset(
-                        assetImg + 'arrow_left_icon.svg',
+                        '${assetImg}arrow_left_icon.svg',
+                        // ignore: deprecated_member_use
                         color: textWhite,
                       ),
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     title,
-                    style: TextStyle(fontSize: 17, color: secondary),
+                    style: const TextStyle(fontSize: 17, color: secondary),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   (action)
-                      ? Container(
+                      ? SizedBox(
                           width: 40.0,
+                          // ignore: avoid_unnecessary_containers
                           child: Container(
                             child: SvgPicture.asset(
                               assetImg + actionIcon,
+                              // ignore: deprecated_member_use
                               color: iconColor,
                               height: 15.0,
                             ),
                           ),
                         )
-                      : Container(
+                      : const SizedBox(
                           width: 40.0,
                           height: 40.0,
                         ),

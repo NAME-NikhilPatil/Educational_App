@@ -19,6 +19,7 @@ class CustomMyCoursesCard extends StatefulWidget {
   final double percentage;
 
   @override
+  // ignore: library_private_types_in_public_api
   _CustomMyCoursesCardState createState() => _CustomMyCoursesCardState();
 }
 
@@ -38,11 +39,11 @@ class _CustomMyCoursesCardState extends State<CustomMyCoursesCard> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
+          SizedBox(
             height: size.width * .13,
             child: Row(
               children: [
-                Container(
+                SizedBox(
                   height: size.width * .13,
                   width: size.width * .13,
                   child: ClipRRect(
@@ -53,7 +54,7 @@ class _CustomMyCoursesCardState extends State<CustomMyCoursesCard> {
                     ),
                   ),
                 ),
-                SizedBox(width: miniSpacer),
+                const SizedBox(width: miniSpacer),
                 Flexible(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,7 +64,7 @@ class _CustomMyCoursesCardState extends State<CustomMyCoursesCard> {
                         widget.title,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: secondary,
                           fontSize: 13.0,
                           fontWeight: FontWeight.w700,
@@ -73,15 +74,15 @@ class _CustomMyCoursesCardState extends State<CustomMyCoursesCard> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Intructor: ' + widget.instructor,
-                            style: TextStyle(
+                            'Intructor: ${widget.instructor}',
+                            style: const TextStyle(
                               fontSize: 11.0,
                               color: grey,
                             ),
                           ),
                           Text(
-                            '6/' + widget.videoAmount,
-                            style: TextStyle(
+                            '6/${widget.videoAmount}',
+                            style: const TextStyle(
                               fontSize: 11.0,
                               color: grey,
                             ),
@@ -120,7 +121,7 @@ class _CustomMyCoursesCardState extends State<CustomMyCoursesCard> {
                           BoxShadow(
                             color: primary.withOpacity(0.5),
                             blurRadius: 6.0,
-                            offset: Offset(0, 3),
+                            offset: const Offset(0, 3),
                           ),
                         ],
                       ),
@@ -128,13 +129,13 @@ class _CustomMyCoursesCardState extends State<CustomMyCoursesCard> {
                   ],
                 ),
               ),
-              SizedBox(width: miniSpacer * 2),
+              const SizedBox(width: miniSpacer * 2),
               Container(
                 width: 50,
                 alignment: Alignment.centerRight,
                 child: Text(
-                  widget.percentage.toString() + '%',
-                  style: TextStyle(
+                  '${widget.percentage}%',
+                  style: const TextStyle(
                       fontSize: 13.0,
                       color: primary,
                       fontWeight: FontWeight.w700),

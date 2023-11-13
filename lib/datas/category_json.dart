@@ -72,22 +72,22 @@ const List CategoryJson2 = [
 const List AllCategories = [
   {
     'icon': 'assets/images/code_icon.svg',
-    'title': 'Code',
+    'title': 'Maths',
     'data': Code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Finance & Accounting',
+    'title': 'Science',
     'data': Code,
   },
   {
     'icon': 'assets/images/brush_icon.svg',
-    'title': 'Design',
+    'title': 'Hindi',
     'data': Code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Development',
+    'title': 'Language',
     'data': Code,
   },
   {
@@ -97,12 +97,12 @@ const List AllCategories = [
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'IT & Software',
+    'title': 'Personal development',
     'data': Code,
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Photography & Video',
+    'title': 'Test',
     'data': Code,
   },
   {

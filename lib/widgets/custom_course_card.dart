@@ -20,6 +20,7 @@ class CustomCourseCardExpand extends StatefulWidget {
   final String price;
 
   @override
+  // ignore: library_private_types_in_public_api
   _CustomCourseCardExpandState createState() => _CustomCourseCardExpandState();
 }
 
@@ -30,7 +31,7 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
     return Container(
       width: size.width * .6,
       alignment: Alignment.topCenter,
-      padding: EdgeInsets.all(7.0),
+      padding: const EdgeInsets.all(7.0),
       decoration: BoxDecoration(
         color: textWhite,
         borderRadius: BorderRadius.circular(17.0),
@@ -38,7 +39,7 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
           BoxShadow(
             color: textBlack.withOpacity(0.1),
             blurRadius: 10.0,
-            offset: Offset(0, 5),
+            offset: const Offset(0, 5),
           )
         ],
       ),
@@ -47,7 +48,7 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
           Stack(
             alignment: Alignment.bottomLeft,
             children: [
-              Container(
+              SizedBox(
                 height: size.width * .6,
                 width: size.width * .6,
                 child: ClipRRect(
@@ -70,7 +71,7 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
                       borderRadius: BorderRadius.circular(100.0)),
                   child: Text(
                     '${widget.videoAmount} Videos',
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: secondary,
                         fontSize: 14.0,
                         fontWeight: FontWeight.w700),
@@ -79,7 +80,7 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
               ),
             ],
           ),
-          SizedBox(height: 15.0),
+          const SizedBox(height: 15.0),
           Container(
             padding: const EdgeInsets.only(
               left: 7.0,
@@ -89,14 +90,14 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
               widget.title,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(
+              style: const TextStyle(
                 color: secondary,
                 fontSize: 17.0,
                 fontWeight: FontWeight.w700,
               ),
             ),
           ),
-          SizedBox(height: 15.0),
+          const SizedBox(height: 15.0),
           Padding(
             padding: const EdgeInsets.only(
               left: 7.0,
@@ -105,7 +106,7 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
+                SizedBox(
                   height: 30.0,
                   width: 30.0,
                   child: ClipRRect(
@@ -116,14 +117,14 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
                     ),
                   ),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Flexible(
                   child: Container(
                     width: size.width,
                     alignment: Alignment.centerLeft,
                     child: Text(
                       widget.userName,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: secondary,
                         fontSize: 13.0,
                       ),
@@ -132,7 +133,7 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
                 ),
                 Text(
                   '\$${widget.price}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: primary,
                     fontSize: 15.0,
                     fontWeight: FontWeight.w700,
@@ -141,7 +142,7 @@ class _CustomCourseCardExpandState extends State<CustomCourseCardExpand> {
               ],
             ),
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
         ],
       ),
     );
@@ -163,6 +164,7 @@ class CustomCourseCardShrink extends StatefulWidget {
   final String price;
 
   @override
+  // ignore: library_private_types_in_public_api
   _CustomCourseCardShrinkState createState() => _CustomCourseCardShrinkState();
 }
 
@@ -181,7 +183,7 @@ class _CustomCourseCardShrinkState extends State<CustomCourseCardShrink> {
       ),
       child: Row(
         children: [
-          Container(
+          SizedBox(
             height: size.width * .125,
             width: size.width * .125,
             child: ClipRRect(
@@ -192,7 +194,7 @@ class _CustomCourseCardShrinkState extends State<CustomCourseCardShrink> {
               ),
             ),
           ),
-          SizedBox(width: 15.0),
+          const SizedBox(width: 15.0),
           Flexible(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -202,7 +204,7 @@ class _CustomCourseCardShrinkState extends State<CustomCourseCardShrink> {
                   widget.title,
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 14.0,
                     color: secondary,
                     fontWeight: FontWeight.w700,
@@ -212,15 +214,15 @@ class _CustomCourseCardShrinkState extends State<CustomCourseCardShrink> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Instructor: ' + widget.userName,
-                      style: TextStyle(
+                      'Instructor: ${widget.userName}',
+                      style: const TextStyle(
                         fontSize: 12.0,
                         color: grey,
                       ),
                     ),
                     Text(
-                      '\$' + widget.price,
-                      style: TextStyle(
+                      '\$${widget.price}',
+                      style: const TextStyle(
                         fontSize: 14.0,
                         color: primary,
                         fontWeight: FontWeight.w700,

@@ -30,6 +30,7 @@ class CustomTextField extends StatefulWidget {
   final Color? iconColor;
 
   @override
+  // ignore: library_private_types_in_public_api
   _CustomTextFieldState createState() => _CustomTextFieldState();
 }
 
@@ -52,14 +53,13 @@ class _CustomTextFieldState extends State<CustomTextField> {
             width: 50.0,
             // color: grey,
             alignment: Alignment.center,
-            child: Container(
-                child: SvgPicture.asset(
+            child: SvgPicture.asset(
               assetImg + widget.prefixIcon,
               height: widget.iconHeight,
               color: widget.iconColor,
-            )),
+            ),
           ),
-          SizedBox(width: miniSpacer),
+          const SizedBox(width: miniSpacer),
           Flexible(
               child: TextField(
             onTap: () {},
@@ -68,7 +68,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             obscureText: widget.isPassword,
             controller: widget.controller,
             maxLines: widget.maxLine,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 15.0,
               color: secondary,
               fontWeight: FontWeight.w500,

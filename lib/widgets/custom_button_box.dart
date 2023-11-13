@@ -30,7 +30,7 @@ class CustomButtonBox extends StatelessWidget {
       ),
       child: Text(
         title,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 14.0,
           fontWeight: FontWeight.w700,
           color: textWhite,

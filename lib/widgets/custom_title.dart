@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:educational_app/theme/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +15,7 @@ class CustomTitle extends StatelessWidget {
   final String route;
   final bool extend;
   final double fontSize;
+  // ignore: prefer_typing_uninitialized_variables
   final arg;
 
   @override
@@ -40,7 +40,7 @@ class CustomTitle extends StatelessWidget {
                   //   arguments: arg,
                   // );
                 },
-                child: Text(
+                child: const Text(
                   'See More',
                   style: TextStyle(
                       color: primary,

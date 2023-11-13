@@ -32,11 +32,11 @@ class CustomPersonCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
+          SizedBox(
             height: size.width * .125,
             child: Row(
               children: [
-                Container(
+                SizedBox(
                   width: size.width * .125,
                   height: size.width * .125,
                   child: ClipRRect(
@@ -44,7 +44,7 @@ class CustomPersonCard extends StatelessWidget {
                     child: Image.network(image, fit: BoxFit.cover),
                   ),
                 ),
-                SizedBox(width: 15.0),
+                const SizedBox(width: 15.0),
                 Flexible(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -54,18 +54,18 @@ class CustomPersonCard extends StatelessWidget {
                         name,
                         maxLines: 1,
                         overflow: TextOverflow.fade,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 15.0,
                           fontWeight: FontWeight.w700,
                           color: secondary,
                         ),
                       ),
-                      SizedBox(height: 5.0),
+                      const SizedBox(height: 5.0),
                       Text(
                         course,
                         maxLines: 1,
                         overflow: TextOverflow.fade,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 12.0,
                           color: grey,
                         ),
@@ -81,16 +81,16 @@ class CustomPersonCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  totalCourses + ' Courses',
-                  style: TextStyle(
+                  '$totalCourses Courses',
+                  style: const TextStyle(
                     fontSize: 12.0,
                     fontWeight: FontWeight.w500,
                     color: primary,
                   ),
                 ),
                 Text(
-                  totalStudents + ' Students',
-                  style: TextStyle(
+                  '$totalStudents Students',
+                  style: const TextStyle(
                     fontSize: 12.0,
                     fontWeight: FontWeight.w500,
                     color: primary,
