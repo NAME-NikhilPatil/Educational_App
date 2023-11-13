@@ -18,23 +18,23 @@ const List HomePageCategoryJson = [
 const List CategoryJson = [
   {
     'icon': 'assets/images/code_icon.svg',
-    'title': 'Code',
+    'title': 'Maths',
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Finance & Accounting',
+    'title': 'Hindi',
   },
   {
     'icon': 'assets/images/brush_icon.svg',
-    'title': 'Design',
+    'title': 'Urdu',
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Development',
+    'title': 'Geography',
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Business',
+    'title': 'Computer',
   },
   {
     'icon': 'assets/images/bag_icon.svg',
@@ -45,19 +45,19 @@ const List CategoryJson = [
 const List CategoryJson2 = [
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Photography & Video',
+    'title': 'Test',
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Marketing',
+    'title': 'Viva',
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Lifestyle',
+    'title': 'Daily Test',
   },
   {
     'icon': 'assets/images/bag_icon.svg',
-    'title': 'Office Productivity',
+    'title': 'English',
   },
   {
     'icon': 'assets/images/bag_icon.svg',

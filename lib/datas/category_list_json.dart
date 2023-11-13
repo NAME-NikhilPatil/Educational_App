@@ -4,21 +4,21 @@ const Code = {
       'image':
           'https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80',
       'video': '20',
-      'title': 'Web Apps with React and Firebase Introduction',
+      'title': 'Testing',
       'user_profile':
           'https://images.unsplash.com/photo-1601582589907-f92af5ed9db8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80',
       'user_name': 'Jonathan',
-      'price': '30.00',
+      'price': 'Free',
     },
     {
       'image':
           'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80',
       'video': '15',
-      'title': 'Getting start with UX Flow design',
+      'title': 'Testing',
       'user_profile':
           'https://images.unsplash.com/photo-1558507652-2d9626c4e67a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80',
       'user_name': 'Ormid',
-      'price': '22.00',
+      'price': 'Free',
     },
   ],
   'popular_topic': [
