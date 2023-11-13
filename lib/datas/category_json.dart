@@ -1,18 +1,16 @@
-
-
 import 'package:educational_app/datas/category_list_json.dart';
 
 const List HomePageCategoryJson = [
   {
-    'icon': 'assets/images/code_icon.svg',
+    'icon': 'assets/images/maths.svg',
     'title': 'Maths',
   },
   {
-    'icon': 'assets/images/brush_icon.svg',
+    'icon': 'assets/images/science.svg',
     'title': 'Science',
   },
   {
-    'icon': 'assets/images/bag_icon.svg',
+    'icon': 'assets/images/language.svg',
     'title': 'Language',
   },
 ];
