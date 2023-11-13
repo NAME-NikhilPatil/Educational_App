@@ -1,9 +1,6 @@
-import 'package:educational_app/Screens/home_screen.dart';
-import 'package:educational_app/Screens/phone_number.dart';
 import 'package:flutter/material.dart';
-
 import '../../../components/already_have_an_account_acheck.dart';
-import '../../../constants.dart';
+import '../../../theme/constants.dart';
 import '../../Login/login_screen.dart';
 
 class SignUpForm extends StatelessWidget {
@@ -84,7 +81,7 @@ class SignUpForm extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => LoginScreen(),
+                    builder: (context) => const LoginScreen(),
                   ),
                 );
               },

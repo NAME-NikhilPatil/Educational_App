@@ -1,5 +1,6 @@
-import 'package:educational_app/Screens/verify.dart';
-import 'package:educational_app/constants.dart';
+import 'package:educational_app/Screens/Login/verify.dart';
+
+import 'package:educational_app/theme/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -102,7 +103,7 @@ class _MyPhoneState extends State<MyPhone> {
                 height: 45,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: kPrimaryColor,
+                        backgroundColor: kPrimaryColor,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10))),
                     onPressed: () {

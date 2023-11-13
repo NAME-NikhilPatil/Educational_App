@@ -1,4 +1,4 @@
-import 'package:educational_app/constants.dart';
+import 'package:educational_app/theme/constants.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_auth/constants.dart';
 

@@ -1,8 +1,7 @@
-import 'package:educational_app/Screens/home_screen.dart';
+import 'package:educational_app/root_app.dart';
 import 'package:flutter/material.dart';
-
 import '../../../components/already_have_an_account_acheck.dart';
-import '../../../constants.dart';
+import '../../../theme/constants.dart';
 import '../../Signup/signup_screen.dart';
 
 class LoginForm extends StatelessWidget {
@@ -20,10 +19,10 @@ class LoginForm extends StatelessWidget {
             textInputAction: TextInputAction.next,
             cursorColor: kPrimaryColor,
             onSaved: (email) {},
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               hintText: "Your email",
               prefixIcon: Padding(
-                padding: const EdgeInsets.all(defaultPadding),
+                padding: EdgeInsets.all(defaultPadding),
                 child: Icon(Icons.person),
               ),
             ),
@@ -34,10 +33,10 @@ class LoginForm extends StatelessWidget {
               textInputAction: TextInputAction.done,
               obscureText: true,
               cursorColor: kPrimaryColor,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: "Your password",
                 prefixIcon: Padding(
-                  padding: const EdgeInsets.all(defaultPadding),
+                  padding: EdgeInsets.all(defaultPadding),
                   child: Icon(Icons.lock),
                 ),
               ),
@@ -52,7 +51,7 @@ class LoginForm extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return HomeScreen();
+                      return const RootApp();
                     },
                   ),
                 );
@@ -69,7 +68,7 @@ class LoginForm extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return SignUpScreen();
+                    return const SignUpScreen();
                   },
                 ),
               );

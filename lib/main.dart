@@ -1,8 +1,6 @@
 import 'package:educational_app/Screens/Welcome/welcome_screen.dart';
-import 'package:educational_app/constants.dart';
+import 'package:educational_app/theme/constants.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter_auth/Screens/Welcome/welcome_screen.dart';
-// import 'package:flutter_auth/constants.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,14 +12,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Auth',
+      title: 'Step to learn',
       theme: ThemeData(
           primaryColor: kPrimaryColor,
           scaffoldBackgroundColor: Colors.white,
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
               elevation: 0,
-              primary: kPrimaryColor,
+              backgroundColor: kPrimaryColor,
               shape: const StadiumBorder(),
               maximumSize: const Size(double.infinity, 56),
               minimumSize: const Size(double.infinity, 56),

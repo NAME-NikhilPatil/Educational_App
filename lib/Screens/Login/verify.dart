@@ -1,5 +1,6 @@
-import 'package:educational_app/Screens/home_screen.dart';
-import 'package:educational_app/constants.dart';
+
+import 'package:educational_app/root_app.dart';
+import 'package:educational_app/theme/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pinput/pinput.dart';
@@ -92,6 +93,7 @@ class _MyVerifyState extends State<MyVerify> {
                 // submittedPinTheme: submittedPinTheme,
 
                 showCursor: true,
+                // ignore: avoid_print
                 onCompleted: (pin) => print(pin),
               ),
               const SizedBox(
@@ -109,7 +111,7 @@ class _MyVerifyState extends State<MyVerify> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const HomeScreen(),
+                          builder: (context) => const RootApp(),
                         ),
                       );
                     },

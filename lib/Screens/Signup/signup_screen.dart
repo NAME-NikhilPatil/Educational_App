@@ -1,7 +1,4 @@
-import 'package:educational_app/constants.dart';
-import 'package:educational_app/responsive.dart';
 import 'package:flutter/material.dart';
-
 import '../../components/background.dart';
 import 'components/sign_up_top_image.dart';
 import 'components/signup_form.dart';
