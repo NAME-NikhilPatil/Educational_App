@@ -1,4 +1,3 @@
-
 import 'package:educational_app/theme/constants.dart';
 import 'package:educational_app/theme/padding.dart';
 import 'package:flutter/material.dart';
@@ -41,13 +40,15 @@ class _CustomSearchFieldState extends State<CustomSearchField> {
             child: Container(
               child: SvgPicture.asset(
                 assetImg + 'search_icon.svg',
-                color: secondary.withOpacity(0.5),
+                color: secondary,
+                // color: Colors.white,
                 height: 15.0,
               ),
             ),
           ),
           Flexible(
             child: Container(
+              color: Colors.white,
               width: size.width,
               height: 38,
               alignment: Alignment.topCenter,

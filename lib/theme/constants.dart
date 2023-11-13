@@ -10,6 +10,7 @@ const String assetImg = 'assets/images/';
 //for home screen
 const Color primary = Color(0xFF6F35A5);
 const Color secondary = Color.fromARGB(255, 183, 131, 220);
+// const Color secondary=Color(0xffffffff)
 const Color background = Color(0xFFF5F5F5);
 const Color textWhite = Color(0xFFFFFFFF);
 const Color textBlack = Color(0xFF000000);
